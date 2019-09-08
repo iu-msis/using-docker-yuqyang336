@@ -61,7 +61,7 @@
   <h1 class="mt-5">Welcome to my book collection!</h1>
   </div>
   <br>
-  <table class="table table-bordered table-striped table-hover table-condensed">
+  <table id="table-id" class="table table-bordered table-striped table-hover table-condensed">
 
       <thead>
           <tr>
@@ -132,6 +132,11 @@
   <br>
 
 </div>
+<script src='js/tablesort.min.js'></script>
+<script>
+  new Tablesort(document.getElementById('table-id'));
+</script>
 </body>
+
 
 </html>

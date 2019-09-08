@@ -40,14 +40,13 @@
 
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home
-            </a>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="profile.html">About me</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="books.html">Books</a>
           </li>
         </ul>
@@ -56,15 +55,83 @@
   </nav>
 
   <!-- Page Content -->
-    <div class="container">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5" id="welcome">Welcome to my page!</h1>
-        <p id="description">I specialize in interactive experience for web, mobile and tablet devices.</p>
-        <a target="_blank" href="img/DIGITAL.jpg">
-        <img class="img-responsive" src="img/DIGITAL.jpg" width=75% height=auto></a>
-        <p class="citation text-center" id="cite"><cite>Photo source: https://simarlab.it/en/services/web-development/</cite></p>
-      </div>
-    </div>
+
+<div class="container">
+  <div class="col-lg-12 text-center">
+  <h1 class="mt-5">Welcome to my book collection!</h1>
+  </div>
+  <br>
+  <table class="table table-bordered table-striped table-hover table-condensed">
+
+      <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author(s)</th>
+            <th>Year Published</th>
+            <th>Publisher</th>
+            <th>Page Count</th>
+            <th>MSRP</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td>Where the Crawdads Sing</td>
+            <td>Delia Owens</td>
+            <td>2018</td>
+            <td>Penguin Publishing Group</td>
+            <td>384</td>
+            <td>$13.00</td>
+          </tr>
+          <tr>
+            <td>Educated</td>
+            <td>Tara Westover</td>
+            <td>2018</td>
+            <td>Random House Publishing Group</td>
+            <td>352</td>
+            <td>$28.00</td>
+          </tr>
+          <tr>
+            <td>The Bookshop of Yesterdays</td>
+            <td>Amy Meyerson</td>
+            <td>2019</td>
+            <td>Park Row Books</td>
+            <td>384</td>
+            <td>$16.99</td>
+          </tr>
+          <tr>
+            <td>Becoming</td>
+            <td>Michelle Obama</td>
+            <td>2018</td>
+            <td>Crown Publishing Group</td>
+            <td>448</td>
+            <td>$32.50</td>
+          </tr>
+      </tbody>
+      <tfoot>
+      </tfoot>
+  </table>
+  <p class="mt-5 text-center citation" > <cite>Book source: https://www.barnesandnoble.com/b/books/_/N-1fZ29Z8q8</cite>
+  </p>
+
+<p class="mt-5">Add new books into the collection:</p>
+
+<form>
+  Title:<br>
+  <input type="text" name="title" class="form-control" placeholder="Enter book title"><br>
+  Author(s):<br>
+  <input type="text" name="author(s)" class="form-control" placeholder="Enter author name(s)"><br>
+  Year Published:<br>
+  <input type="text" name="year" class="form-control" placeholder="Enter year"><br>
+  Publisher:<br>
+  <input type="text" name="publisher" class="form-control" placeholder="Enter publisher"><br>
+  MSRP:<br>
+  <input type="text" name="text" class="form-control" placeholder="Enter suggested retail price"><br>
+</form>
+  <button type="submit" class=""btn btn-primary"">Submit</button>
+  <br>
+  <br>
+
+</div>
 </body>
 
 </html>

@@ -88,6 +88,10 @@ thead {
     width: 100%;
 }
 
+#profile-name {
+  text-transform: capitalize;
+}
+
 /*tablesort css*/
 th[role=columnheader]:not(.no-sort) {
 	cursor: pointer;

@@ -74,7 +74,9 @@
           <a v-bind:href="'mailto:'+user.results[0].email" id="emaillink">{{ user.results[0].email }}</a>
         </p>
         <br>
-        <br>
+        <form @submit.prevent="fetchuser">
+        <button type="submit">Refresh</button>
+      </form>
         <p class="mt-5 citation"><cite>Profile source: https://randomuser.me/.</cite></p>
         <br>
       </template>
